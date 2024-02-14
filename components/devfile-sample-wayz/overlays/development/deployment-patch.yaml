@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-wayz
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0023-tenant/tkwch-fix-0075-0023-app/devfile-sample-wayz@sha256:601663886fbce0ecb2aca2eebe83bd910ed09263679071f574a4991fa3a0f352
+        name: my-nodejs
+        resources: {}
+status: {}
